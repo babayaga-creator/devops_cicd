@@ -1,0 +1,12 @@
+name: Pytest
+
+on:
+  push:
+    branches:
+      - main
+
+  workflow_dispatch:
+
+jobs:
+  pytest-install:
+    runs-on: ububuntu-latest
