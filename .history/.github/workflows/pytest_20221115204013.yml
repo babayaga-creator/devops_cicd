@@ -1,0 +1,18 @@
+name: Pytest
+
+on:
+  push:
+    branches:
+      - main
+
+  workflow_dispatch:
+
+jobs:
+  pytest-install:
+    runs-on: ubuntu-latest
+
+  steps:
+
+    uses: actions/checkout@v3
+      with:
+        ref: main
