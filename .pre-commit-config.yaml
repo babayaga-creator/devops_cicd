@@ -19,3 +19,8 @@ repos:
         - --output-format=colorized
         - --errors-only
         - --ignore-paths=[tests/]
+
+-   repo: https://github.com/pre-commit/mirrors-autopep8
+    rev: 'v2.0.0'  # Use the sha / tag you want to point at
+    hooks:
+    -   id: autopep8
