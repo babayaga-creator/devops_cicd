@@ -13,5 +13,3 @@ EXPOSE 5000/tcp
 ENV FLASK_APP=hello_flask
 
 CMD [ "flask", "run", "--host=0.0.0.0"]
-
-

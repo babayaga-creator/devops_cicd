@@ -16,21 +16,20 @@ jobs:
         with:
           ref: main
 
-      - name: List Files 
+      - name: List Files
         run: |
-          pwd 
-          ls 
-          echo $GITHUB_SHA 
+          pwd
+          ls
+          echo $GITHUB_SHA
           echo $GITHUB_REPOSITORY
           echo $GITHUB_WORKSPACE
-          echo '${{ github.token }}'    
+          echo '${{ github.token }}'
 
       - name: Install dependencies
         run: |
           pip install pytest
           pip install -r requirements.txt
-      
+
       - name: Test with pytest
         run: |
           pytest
-   
